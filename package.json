@@ -1,0 +1,56 @@
+{
+  "name": "particle-landscape-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "generate:heightmap": "node terrain-tools/heightmap-generator.js",
+    "demo:basic": "vite --open /demos/basic-terrain/index.html",
+    "demo:infinite": "vite --open /demos/infinite-terrain/index.html",
+    "demo:fog": "vite --open /demos/fog-landscape/index.html",
+    "demo:alien": "vite --open /demos/alien-world/index.html"
+  },
+  "dependencies": {
+    "three": "^0.167.1"
+  },
+  "devDependencies": {
+    "vite": "^5.4.2"
+  },
+  "main": "./engine/index.js",
+  "exports": {
+    ".": "./engine/index.js",
+    "./engine": "./engine/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "engine",
+    "demos",
+    "terrain-tools",
+    "docs",
+    "assets",
+    "README.md",
+    "CHANGELOG.md",
+    "vite.config.js",
+    "index.html"
+  ],
+  "description": "Premium starter kit for building heightmap-driven GPU particle terrains with Three.js.",
+  "keywords": [
+    "threejs",
+    "webgl",
+    "particles",
+    "terrain",
+    "heightmap",
+    "vite",
+    "starter-kit"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10",
+  "directories": {
+    "doc": "docs"
+  }
+}
