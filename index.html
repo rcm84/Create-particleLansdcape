@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.167.1/build/three.module.js"
+        }
+      }
+    </script>
+    <title>ParticleLandscapeEngine</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(circle at top, #111827 0%, #020617 100%);
+        color: #e2e8f0;
+        font-family: Inter, system-ui, sans-serif;
+      }
+      main {
+        width: min(900px, calc(100vw - 2rem));
+        padding: 2rem;
+        background: rgba(15, 23, 42, 0.8);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 24px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      }
+      a { color: #7dd3fc; }
+      ul { line-height: 1.8; }
+      code { color: #f9a8d4; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>ParticleLandscapeEngine</h1>
+      <p>A reusable Three.js toolkit for heightmap-driven GPU particle terrains.</p>
+      <ul>
+        <li><a href="/demos/basic-terrain/index.html">Basic Terrain</a></li>
+        <li><a href="/demos/infinite-terrain/index.html">Infinite Terrain</a></li>
+        <li><a href="/demos/fog-landscape/index.html">Fog Landscape</a></li>
+        <li><a href="/demos/alien-world/index.html">Alien World</a></li>
+      </ul>
+      <p>Start with <code>npm install</code> and <code>npm run dev</code>.</p>
+    </main>
+  </body>
+</html>
